@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : Santhosh V
+  @group             : 
+  @last modified on  : 08-26-2022
+  @last modified by  : Santhosh V
+-->
+<template>
+    <lightning-card title="Search Results">
+        <lightning-layout multiple-rows> 
+            <template for:each={backendvalues} for:item="val">
+                <lightning-layout-item size="3" padding="around-medium" key={val.id}>
+                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">{val.Name}</div>
+            </lightning-layout-item> 
+            </template>
+        
+        </lightning-layout>  
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : Santhosh V
+  @group             : 
+  @last modified on  : 08-22-2022
+  @last modified by  : Santhosh V
+-->
+<template>
+    <lightning-card title="Set Your View">
+    <lightning-layout>
+        <lightning-layout-item size="4" padding="around-small">
+            <lightning-combobox value={value} options={options} onchange={handleChange}></lightning-combobox>
+        </lightning-layout-item>
+       
+    <lightning-layout-item size="2" padding="around-small">
+        <div class="slds-p-top_medium">
+        <lightning-button label="New" onclick={onclickhandler}></lightning-button></div>
+    </lightning-layout-item>
+    </lightning-layout>
+    </lightning-card>
+</template>
